@@ -358,7 +358,7 @@ main {
 }
 
 .content-wrap {
-  padding-bottom: 17vh;    /* Footer height */
+  padding-bottom: 1px; 
 }
 
 .image-item.hidden {
@@ -377,7 +377,7 @@ main {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 8vh;  
+  /* height: 8vh;   */
 }
 
 button.accordion {
@@ -446,7 +446,7 @@ img {
 .gallery-grid {
   margin-top: 58px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
   grid-auto-rows: 250px;
   grid-auto-flow: dense;
   align-items: stretch;
