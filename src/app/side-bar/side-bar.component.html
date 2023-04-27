@@ -1,0 +1,15 @@
+<section class="side-bar-container">
+    <div *ngFor="let county of getCounties()">
+      <button class="accordion" (click)="togglePanel($event)">{{ county }}</button>
+      <div class="panel">
+        <ul>
+          <li *ngFor="let location of getLocations(county)">
+            <p (click)="locationClicked.emit(location)">{{ location }}</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  
+
+

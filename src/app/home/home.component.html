@@ -1,0 +1,18 @@
+<!-- <div class="image-grid">
+    <div *ngFor="let photograph of photographs" class="image-item">
+      <img [src]="photograph.url" alt="{{photograph.description}}">
+      <a [title]="photograph.name + ' details'" [routerLink]="['/photographs', photograph.id]">{{ photograph.name }}</a>
+      <p>{{photograph.description}}</p>
+    </div>
+</div> -->
+
+<ul class="gallery-grid">
+  <div *ngFor="let photo of photoset.photo">
+    <div *ngIf="photoset && photoset.photo">
+      <a [title]="photo.title" [routerLink]="['/photographs', photo.id]">
+        <img class="wide" [src]="getPhotoUrl(photo, photoset)" alt="{{ photo.title }}">
+      </a>
+    </div>  
+  </div>
+</ul>
+

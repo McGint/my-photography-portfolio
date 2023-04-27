@@ -1,0 +1,14 @@
+<div class="center">
+<section class="contact-container">
+    <div *ngIf="photo" class="photograph-details">
+      <div class="photograph-image">
+        <img [src]="getPhotoUrl(photo)" alt="{{ photo.title._content }}">
+      </div>
+      <div class="photograph-info">
+        <h3>{{ this.photo.title._content }}</h3>
+        <!-- <h4>{{ photograph.price | currency: 'EUR' }}</h4> -->
+        <p>{{ this.photo.description._content }}
+      </div>
+    </div>
+  </section>
+</div>

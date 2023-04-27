@@ -1,0 +1,16 @@
+<nav class="top-bar">
+  <a class="logo" routerLink="/">Scott Carey Photography</a>
+  <ul class="nav-links">
+    <li><a routerLink="/" routerLinkActive="active-link">Home</a></li>
+    <li><a routerLink="/about" routerLinkActive="active-link">About</a></li>
+    <li><a routerLink="/portfolio" routerLinkActive="active-link">Portfolio</a></li>
+    <li><a routerLink="/contact" routerLinkActive="active-link">Contact</a></li>
+  </ul>
+
+  <select (change)="onSelect($event)"> 
+    <option value="/">HOME</option> 
+    <option value="/about">ABOUT</option> 
+    <option value="/portfolio">PORTFOLIO</option> 
+    <option value="/contact">CONTACT</option> 
+  </select> 
+</nav>
