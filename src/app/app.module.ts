@@ -15,12 +15,13 @@ import { PhotographDetailsComponent } from './photograph-details/photograph-deta
 import { SideBarComponent } from './side-bar/side-bar.component';
 import { FilterByCountyPipe } from './filter-by-county.pipe';
 import { FilterByLocationPipe } from './filter-by-location.pipe';
+import { ContactPageComponent } from './contact-page/contact-page.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'portfolio', component: PortfolioComponent },
   { path: 'about', component: AboutComponent },
-  { path: 'contact', component: ContactComponent },
+  { path: 'contact', component: ContactPageComponent },
   { path: 'photographs/:photographId', component: PhotographDetailsComponent },
 ];
 
@@ -38,6 +39,7 @@ const routes: Routes = [
     SideBarComponent,
     FilterByCountyPipe,
     FilterByLocationPipe,
+    ContactPageComponent,
   ],
   imports: [
     BrowserModule,

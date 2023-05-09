@@ -158,12 +158,15 @@ option {
   .about-container {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 68px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 60px;
   }
 
   /*Bio Container*/
   .bio-container {
     background-color: #ffffff;
-    margin-top: 68px;
     border-radius: 8px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
     flex: 2;
@@ -176,6 +179,7 @@ option {
     display: flex;
     align-items: center;
     margin-bottom: 32px;
+    font-size: 15px;
   }
   
   .bio-image {
@@ -189,18 +193,26 @@ option {
     margin-bottom: 16px;
   }
   
-/*Contact Container*/
-.contact-container {
+
+.contact-page-container{
   margin-top: 68px;
+  margin-right: 10px;
+  margin-bottom: 60px;
+}
+/* Contact Container */
+.contact-container {
   background-color: #ffffff;
+  margin-left: 10px;
   border-radius: 8px;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
-  max-width: 100%;
-  padding: 32px;
+  min-height: 100vh;
+  min-width: 40vw;
+  padding-left: 32px;
+  padding-top: 32px;
 }
 
 .contact-heading {
-  font-size: 2.5rem;
+  font-size: 2.0rem;
   margin-bottom: 32px;
 }
 
@@ -232,17 +244,16 @@ option {
   margin-right: 8px;
 }
 
-
 /* Media Query for smaller screens */
-/* @media (max-width: 600px) {
-  .about-container {
-    flex-direction: column;
-  }
-
+@media (max-width: 600px) {
   .bio-container {
-    margin-bottom: 32px;
+    margin-bottom: 10px;
   }
-} */
+  .contact-container{
+    margin-left: 0px;
+    min-width: 86vw;
+  }
+}
 
 /*Photograph Details Container*/
 .photograph-details-container {
