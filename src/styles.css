@@ -100,7 +100,6 @@ option {
 
 /*Image Grid*/
 .image-grid {
-    margin-top: 68px;
     display: grid;
     /* flex-wrap: wrap;  */
     /* grid-template-columns: repeat(auto-fit, minmax(250px, 0.47fr)); */
@@ -146,14 +145,6 @@ option {
     text-align: center;
   }
 
-
-  .portfolio-container {
-    /* display: flex; */
-    /* justify-content: center;
-    align-items: center; */
-    /* height: 100vh; */
-  }
-  
   /*About Container*/
   .about-container {
     display: flex;
@@ -253,7 +244,6 @@ option {
     margin-left: 0px;
     min-width: 86vw;
     min-height: 30vh;
-
   }
 }
 
@@ -301,6 +291,8 @@ option {
 .portfolio-container {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 68px;
+  margin-bottom: 60px;
   /* margin-left: 32vh; /*When sidebar is funcitonal uncomment*/
 }
 
@@ -320,19 +312,16 @@ option {
   nav li     { display: none; }
   nav select { display: inline-block; }
   
-
-  .side-bar-container {
-  width: 15vh;
-  }
   .portfolio-container {
-    margin-left: 15vh;
-  }
+    margin-top: 100px;
+  } 
 
   .image-grid {
+    justify-content: center;
     grid-template-columns: repeat(auto-fit, minmax(0vh, 36vh));
   }
-  } 
-  /* Needs Work */
+} 
+
 
 .side-bar-container div {
   display: flex;
