@@ -238,6 +238,7 @@ option {
 /* Media Query for smaller screens */
 @media (max-width: 600px) {
   .bio-container {
+    margin-top: 30px;
     margin-bottom: 10px;
   }
   .contact-container{
@@ -309,9 +310,15 @@ option {
 }
 
 @media (max-width: 768px) {
-  nav li     { display: none; }
-  nav select { display: inline-block; }
-  
+  nav li     { 
+    display: none; 
+  }
+
+  nav select { 
+    display: inline-block; 
+    margin-right: 1%;
+  }
+
   .portfolio-container {
     margin-top: 100px;
   } 
@@ -321,7 +328,6 @@ option {
     grid-template-columns: repeat(auto-fit, minmax(0vh, 36vh));
   }
 } 
-
 
 .side-bar-container div {
   display: flex;
