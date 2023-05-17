@@ -149,7 +149,8 @@ option {
   .about-container {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 68px;
+    margin-top: 10vh;
+    padding-top: 10px;
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 60px;
@@ -157,6 +158,7 @@ option {
 
   /*Bio Container*/
   .bio-container {
+    margin-right: 10px;
     background-color: #ffffff;
     border-radius: 8px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
@@ -184,16 +186,16 @@ option {
     margin-bottom: 16px;
   }
   
-
 .contact-page-container{
-  margin-top: 68px;
   margin-right: 10px;
+  margin-left: 10px;
   margin-bottom: 60px;
+  margin-top: 10vh;
+  padding-top: 10px;
 }
 /* Contact Container */
 .contact-container {
   background-color: #ffffff;
-  margin-left: 10px;
   border-radius: 8px;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
   min-height: 100vh;
@@ -237,12 +239,12 @@ option {
 
 /* Media Query for smaller screens */
 @media (max-width: 600px) {
-  .bio-container {
-    margin-top: 30px;
+  .bio-container{
     margin-bottom: 10px;
+    margin-right: 0px;
   }
   .contact-container{
-    margin-left: 0px;
+    /* margin-right: -10px; */
     min-width: 86vw;
     min-height: 30vh;
   }
@@ -361,7 +363,7 @@ main {
 
 .page-container {
   position: relative;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   max-width:100vw;
 }
 
