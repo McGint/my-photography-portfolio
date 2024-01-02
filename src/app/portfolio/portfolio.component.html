@@ -15,8 +15,8 @@
     <div *ngFor="let photo of photoset?.photo" class="image-item">
       <img [src]="getPhotoUrl(photo, photoset)" alt="{{ photo.title }}">
       <a [title]="photo.title" [routerLink]="['/photographs', photo.id]">{{photo.title}}</a>
-      <p>{{ getPhotoDescription(photo) }}</p>
-      <p>{{ getPhotoLocation(photo) | async }}</p>
+      <!-- <p>{{ getPhotoDescription(photo) }}</p>
+      <p>{{ getPhotoLocation(photo) | async }}</p> -->
     </div>
   </div>      
 </div>

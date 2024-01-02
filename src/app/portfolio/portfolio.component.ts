@@ -20,12 +20,15 @@ export class PortfolioComponent {
   constructor(private http: HttpClient) {
     this.photoset = null;
   
-    const url = 'https://capable-sled-384714.de.r.appspot.com/photos';
+    const apiKey = 'fc955765a12de40059f5cda9f0d5649f';
+    const userId = '94142351@N06'; // Replace with your Flickr user ID
+
+    const url = `https://api.flickr.com/services/rest/?method=flickr.people.getPhotos&api_key=${apiKey}&user_id=${userId}&format=json&nojsoncallback=1`;
   
     this.http.get(url).pipe(
       concatMap((data: any) => {
         console.log(data); // Check the structure of the data
-        this.photoset = data.photoset;
+        this.photoset = data.photos;
   
         // Create an array of observables for each photo
         const observables = this.photoset.photo.map((photo: any) => {
