@@ -29,7 +29,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## Running Notes
 Environments folder is not stored in github. This contains a production and development environment. Included in these environments are Flickr API keys used by the project and also the base href.
 
-Useful CMD commands -
+## Useful CMD commands
 Running Locally:
 ng serve --configuration=development
 
