@@ -16,6 +16,9 @@ import { SideBarComponent } from './side-bar/side-bar.component';
 import { FilterByCountyPipe } from './filter-by-county.pipe';
 import { FilterByLocationPipe } from './filter-by-location.pipe';
 import { ContactPageComponent } from './contact-page/contact-page.component';
+import { APP_BASE_HREF } from '@angular/common';
+import { environment } from 'src/environments/environment';
+
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -46,7 +49,14 @@ const routes: Routes = [
     RouterModule.forRoot(routes),
     HttpClientModule
   ],
-  providers: [],
+  providers: [
+    { provide: APP_BASE_HREF, useFactory: getBaseHref }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+export function getBaseHref() {
+  // Access the environment configuration here and return the base href accordingly
+  return environment.link; // Replace with the logic to get baseHref from environment configuration
+}
