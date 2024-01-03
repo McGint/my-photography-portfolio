@@ -6,6 +6,8 @@
       </div>
       <div class="photograph-info">
         <h3>{{ this.photo.title._content }}</h3>
+        <p>{{ this.photo.location.locality._content }}
+        <p>{{ this.photo.dates.taken | date: 'yyyy' }}
         <!-- <h4>{{ photograph.price | currency: 'EUR' }}</h4> -->
         <p>{{ this.photo.description._content }}
       </div>

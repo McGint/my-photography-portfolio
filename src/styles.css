@@ -283,7 +283,7 @@ option {
 .photograph-info {
   width: 100%;
   max-width: 800px;
-  text-align: center;
+  text-align: left;
 }
 
 .center {
