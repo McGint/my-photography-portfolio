@@ -33,8 +33,8 @@ Environments folder is not stored in github. This contains a production and deve
 Running Locally:
 ng serve --configuration=development
 
-Building for production
+Building for Production:
 ng build --configuration=production
 
-Deploying
+Deploying:
 ngh --dir=dist/my-photography-portfolio
