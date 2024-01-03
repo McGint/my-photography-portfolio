@@ -25,3 +25,16 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Running Notes
+Environments folder is not stored in github. This contains a production and development environment. Included in these environments are Flickr API keys used by the project and also the base href.
+
+Useful CMD commands -
+Running Locally:
+ng serve --configuration=development
+
+Building for production
+ng build --configuration=production
+
+Deploying
+ngh --dir=dist/my-photography-portfolio
