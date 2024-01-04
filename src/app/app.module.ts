@@ -18,6 +18,7 @@ import { FilterByLocationPipe } from './filter-by-location.pipe';
 import { ContactPageComponent } from './contact-page/contact-page.component';
 import { APP_BASE_HREF } from '@angular/common';
 import { environment } from 'src/environments/environment';
+import { CvComponent } from './cv/cv.component';
 
 
 const routes: Routes = [
@@ -43,6 +44,7 @@ const routes: Routes = [
     FilterByCountyPipe,
     FilterByLocationPipe,
     ContactPageComponent,
+    CvComponent,
   ],
   imports: [
     BrowserModule,
