@@ -281,6 +281,20 @@ option {
   margin-bottom: 32px;
 }
 
+.clickable-header {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.toggle-icon {
+  display: inline-block;
+  transition: transform 0.3s ease; /* Example transition */
+}
+
+.rotate {
+  transform: rotate(180deg); /* Rotate the icon when expanded */
+}
+
 
 /*Photograph Details Container*/
 .photograph-details-container {
