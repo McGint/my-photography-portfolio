@@ -425,7 +425,8 @@ main {
   color: #fff;
   font-size: 1.0rem;
   position: absolute;
-  padding:  20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   width: 100%;
 }
 
