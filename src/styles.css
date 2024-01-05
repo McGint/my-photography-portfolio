@@ -276,6 +276,15 @@ option {
   margin-bottom: 32px;
 }
 
+.institution-content {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.institution-year {
+  margin-left: auto;
+}
+
 .clickable-header {
   cursor: pointer;
   font-weight: bold;

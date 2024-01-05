@@ -5,8 +5,10 @@
         <span class="toggle-icon" [ngClass]="{'rotate': isEducationExpanded}">▼</span>
     </h2>
         <div *ngIf="isEducationExpanded">
-            <strong>2023 - Present</strong><br>
-            <strong>University College Dublin</strong><br>
+            <div class="institution-content">
+                <strong>University College Dublin</strong>
+                <strong class="institution-year">2023 - Present</strong>
+            </div>
             <em>MSc Computer Science (Negotiated Learning)</em>
             <p>Currently undertaking and have completed first semester in a Masters of Computer Science in University College Dublin. With the completion of this Masters, I have advanced my skillset in areas such as Software Development, Data Science and Machine Learning. I have completed or am currently undertaking modules in these disciplines:</p>
             <ul>
@@ -38,8 +40,10 @@
                 </ul>
             </ul>
             <br>
-            <strong>2015 - 2019</strong><br>
-            <strong>University College Cork</strong><br>
+            <div class="institution-content">
+                <strong>University College Cork</strong>
+                <strong class="institution-year">2015 - 2019</strong>
+            </div>
             <em>BSc Business Information Systems (BIS)</em>
             <p>Graduated with an Upper Second-Class Honours (2:1). BIS is four-year, Bachelor of Science degree with a 50/50 focus on Business and Business Technology. The course included:</p>
             <ul>
@@ -56,8 +60,10 @@
         <span class="toggle-icon" [ngClass]="{'rotate': isWorkExperienceExpanded}">▼</span>
     </h2>
         <div *ngIf="isWorkExperienceExpanded">
-            <strong>2019 - 2023</strong><br>
-            <strong>AIG</strong><br>
+            <div class="institution-content">
+                <strong>AIG</strong>
+                <strong class="institution-year">2019 - 2023</strong>
+            </div>
             <em>DevOps Engineer (Jan 2021 – September 2023)</em>
             <p>Full-stack developer tasked with developing several initiatives for a DevOps team (9 people). The main team initiatives include:</p>
             <ul>
