@@ -162,9 +162,7 @@ option {
     background-color: #ffffff;
     border-radius: 8px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
-    flex: 2;
-    flex-direction: column;
-    max-width: 800px;
+    flex: 1;
     padding: 32px;
   }
   
@@ -195,13 +193,13 @@ option {
 } */
 
 .contact-page-container{
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 10vh;
-  padding-top: 10px;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-bottom: 10px;
+     display: flex;
+    flex-wrap: wrap;
+    margin-top: 10vh;
+    padding-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
 } 
 
 /* Contact Container */
@@ -209,10 +207,9 @@ option {
   background-color: #ffffff;
   border-radius: 8px;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
-  min-height: 100vh;
-  min-width: 18vw;
-  padding-left: 32px;
-  padding-top: 32px;
+  flex: 2; /* Expand to fill the remaining space */
+  min-height: 65vh;
+  padding: 32px;
 }
 
 .contact-heading {
@@ -263,17 +260,15 @@ option {
 
 /*CV Container*/
 .cv-container {
+  margin-right: 10px;
   background-color: #ffffff;
   border-radius: 8px;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
-  min-height: 100vh;
-  min-width: 40vw;
-  max-width: 71.5vw;
-  padding-left: 32px;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  padding-right: 32px;
-  margin-right: 10px;
+  flex: 1;
+  min-width: 76.5vw;
+  max-width: 76.5vw;
+  min-height: 65vh;
+  padding: 32px;
 }
 
 .cv-heading {
@@ -294,7 +289,6 @@ option {
 .rotate {
   transform: rotate(180deg); /* Rotate the icon when expanded */
 }
-
 
 /*Photograph Details Container*/
 .photograph-details-container {
